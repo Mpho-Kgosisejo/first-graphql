@@ -1,0 +1,53 @@
+.main-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3.5rem;
+  background: rgb(91, 89, 145);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav .logo h1 {
+  margin: 0;
+  color: rgb(43, 43, 43);
+  font-size: 1.5rem;
+}
+
+.main-nav .items {
+  /* margin: 0 0 0 1.5rem; */
+  margin: 0 1.5rem 0 0;
+}
+
+.main-nav .items ul {
+  display: flex !important;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.main-nav .items ul li {
+  margin: 0 0.5rem;
+}
+
+.main-nav .items ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-nav .items ul li a:hover,
+.main-nav .items ul li a:active,
+.main-nav .items ul li a.active {
+  color: rgb(155, 155, 155);
+}
+
+.main-nav .items ul li.logout a {
+  color: #fff;
+}
+
+.main-nav .items ul li.logout a:hover {
+  color: rgb(155, 155, 155);
+}

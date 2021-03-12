@@ -5,7 +5,8 @@ const {
 
 const {
   getUser,
-  getEvent
+  getEvent,
+  userLoader
 } = require('./merge');
 
 const {
@@ -21,7 +22,7 @@ module.exports = {
 
     try {
 
-      const bookings = await BookingModel.find();
+      const bookings = await BookingModel.find({ user: req.user.userId });
 
       return bookings.map(booking => ({
         ...booking._doc,

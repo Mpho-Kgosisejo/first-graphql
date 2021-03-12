@@ -1,0 +1,51 @@
+
+.modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .main {
+  width: 40rem;
+  padding: 5px 15px;
+  max-width: 90%;
+  display: block;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15)
+}
+
+.modal .main header,
+.modal .main section {
+  padding: 10px 0;
+}
+
+.modal .main header {
+  font-size: 1.5em;
+  text-align: left;
+  color: rgb(91, 89, 145);
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.modal .main section.actions {
+  border-top: 1px solid rgb(230, 230, 230);
+}
+
+.modal .main section.actions button {
+  margin: 0 10px;
+}
+
+.modal .main section.actions button.cancel {
+  background: transparent;
+  color: rgb(91, 89, 145);
+}
+
+form {
+  display: block;
+}

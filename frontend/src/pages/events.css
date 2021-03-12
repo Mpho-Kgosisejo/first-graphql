@@ -1,0 +1,84 @@
+
+.event-page {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 5rem auto 0 auto;
+  width: 30rem;
+  max-width: 80%;
+}
+
+.event-page form {
+  margin: 1rem;
+}
+
+.event-list {
+  width: 40rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  padding: 0;
+  list-style: none;
+}
+
+.event-list li {
+  /* margin: 0.5rem 0; */
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.event-list li.delete {
+  margin-top: 0.5rem;
+}
+
+.event-list li:hover,
+.event-list li.active {
+  background: rgb(247, 247, 247);
+}
+
+.event-list li .sub-content {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #797979;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-list li .link {
+  color: #4a7ac2;
+  font-weight: bold;
+}
+
+.event-list li .content {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.event-list li .footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-list li .footer .price,
+.event-list li .footer .creator {
+  color: #797979;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.event-list li .footer .price {
+  color: #4a7ac2;
+  font-weight: bold;
+}
+
+.event-list li .footer .price.delete {
+  color: #c24a4a;
+}
+
+.event-list li .footer .price:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+.app main {
+  margin: 4rem 2.5rem;
+}
+
+form label,
+form input,
+form textarea {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+form label {
+  margin-bottom: 0.25rem;
+}
+
+form .form-control {
+  margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid rgb(187, 187, 187);
+  width: calc(100% - 1rem - 2px);
+  /* border-bottom: 1px solid rgb(187, 187, 187); */
+  /* border-radius: 5px; */
+}
+
+form .form-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+form button,
+button.btn {
+  background: rgb(91, 89, 145);
+  font: inherit;
+  border: 1px solid rgb(91, 89, 145);
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  /* margin-right: 0.5rem; */
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+form button.link {
+  background: rgba(0, 0, 0, 0);
+  color: rgb(91, 89, 145);
+
+  border-radius: 0px;
+  border: 0px solid rgb(91, 89, 145);
+}
+
+form button.link:hover {
+  background: rgba(0, 0, 0, 0);
+
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+form button:hover,
+form button:active,
+button.btn:hover,
+button.btn:active {
+  background: rgb(80, 79, 128);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+}
